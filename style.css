@@ -41,17 +41,23 @@ header {
 
 main > * {
   width: 25rem;
+  margin-top: 2rem;
+}
+
+section {
+  border-radius: 10px;
+  padding: 1rem 0;
 }
 
 .palindrome-input-section {
   background-color: #fff;
-  margin-top: 2rem;
-  border-radius: 10px;
   text-align: center;
 }
 
-form {
-  padding: 1.3rem 0;
+form,
+.description {
+  width: 80%;
+  margin: 0 auto;
 }
 
 form > * {
@@ -66,6 +72,11 @@ label {
   border: none;
   border-bottom: 1.5px solid #6c128d;
   width: 57%;
+  text-align: center;
+}
+
+#text-input:focus {
+  outline: none;
 }
 
 #check-btn {
@@ -84,6 +95,15 @@ label {
   font-weight: bold;
 }
 
+/* Description */
+
+.description-container {
+  background-color: #0a682b;
+}
+
 .description {
   color: #fff;
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.1rem;
 }
